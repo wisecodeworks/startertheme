@@ -251,6 +251,18 @@ object {
 	position:relative;
 	z-index:5;
 }
+
+/*Fun Button Effect*/
+.btn:hover {
+	opacity: 0.9;
+  transition: box-shadow .7s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*dont show title on homepage*/
+.home .entry-title {
+	display: none;
+}
 /*clear out the navigation*/
 
 .flexnav li a {
