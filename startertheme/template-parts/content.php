@@ -19,13 +19,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bootscores' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
+					<p class="card-content"><?php the_excerpt(); ?></p>
+<a class="card-footer" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><button class="btn btn-primary head-btn">Read More</button></a>
+<hr>
 
 		<?php
 			wp_link_pages( array(
