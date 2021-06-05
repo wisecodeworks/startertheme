@@ -252,6 +252,30 @@ object {
 	z-index:5;
 }
 
+
+/*blog thumbnail for featured image*/
+.feat-image img{
+	max-width: 100%;
+	height: auto;
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+/*blog sidebar edits to make look better*/
+#secondary ul {
+	list-style: none;
+	padding-inline-start: 0px;
+}
+
+
+#secondary .widget-title{
+	font-family: font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 100;
+}
+
+
 /*Fun Button Effect*/
 .btn:hover {
 	opacity: 0.9;
